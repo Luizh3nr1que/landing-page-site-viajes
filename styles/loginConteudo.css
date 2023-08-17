@@ -1,0 +1,119 @@
+:root {
+    --colorPrimary: rgb(255, 118, 118)
+}
+
+.loginContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000097;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.openLogin {
+    animation: openLogin .3s linear forwards;
+
+}
+
+@keyframes openLogin {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100vh;
+    }
+}
+
+.closeLogin {
+    animation: closeLogin .3s linear forwards;
+
+}
+
+@keyframes closeLogin {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 0;
+
+    }
+}
+
+.loginConteudo {
+    background-color: white;
+    width: 25em;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.loginConteudo form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.loginConteudo form .input {
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.loginConteudo form .buttonForm {
+    background-color: var(--colorPrimary);
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 15px;
+}
+
+.loginConteudo form .buttonForm:hover {
+    background-color: rgb(254, 51, 51);
+}
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    transform: scale(1.3);
+}
+
+.checkbox label {
+    font-weight: 500;
+}
+
+form a {
+    text-decoration: none;
+    color: var(--colorPrimary);
+    transition: .4s;
+}
+
+form a:hover {
+    color: rgb(254, 51, 51);
+
+}

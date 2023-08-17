@@ -1,0 +1,61 @@
+#menuIcon {
+    display: none;
+}
+
+.menuMobile {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    background-color: rgb(254, 51, 51);
+    display: none;
+}
+
+.openMenu {
+    animation: openMenu .3s linear forwards;
+}
+
+@keyframes openMenu {
+    from {
+        left: -350px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.closeMenu {
+    animation: closeMenu .2s linear forwards;
+}
+
+@keyframes closeMenu {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -350px;
+    }
+}
+
+.menuMobileConteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 140px;
+    padding-left: 20px;
+}
+
+.menuMobileConteudo a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(254, 51, 51);
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}

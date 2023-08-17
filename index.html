@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/loginConteudo.css">
+    <link rel="stylesheet" href="./styles/load.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+
+    <!-- Biblioteca normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fim Biblioteca normalize -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Viajantes - Luiz Henrique</title>
+</head>
+
+<body>
+    <div class="fundoLoad">
+        <div class="loader"></div>
+    </div>
+
+    <div id="home"></div>
+
+    <header class="header">
+        <div class="headerConteudo">
+            <h1><span>VIA</span>JANTES</h1>
+
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#livro">Livro</a>
+                <a href="#pacote">Pacotes</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="buttons">
+                <ion-icon id="menuIcon" name="menu-outline"></ion-icon>
+                <ion-icon id="searchIcon" name="search-sharp"></ion-icon>
+                <ion-icon id="loginIcon" name="person-sharp"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+    <div class="busca">
+        <input id="inputConteudo" type="text" placeholder="Oque deseja procurar?">
+    </div>
+
+    <div class="loginContainer">
+        <div class="loginConteudo">
+            <h1>LOGIN</h1>
+
+            <form>
+                <input class="input" type="email" placeholder="digite seu email" required>
+                <input class="input" type="password" placeholder="digite sua senha" required>
+                <input class="buttonForm" type="submit" value="Login">
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Lembrar dessa conta?</label>
+                </div>
+                <label>Não tem uma conta? <a href="#">Faça Login</a></label>
+                <label>Esqueceu a senha? <a href="#">Redefina Senha</a></label>
+            </form>
+        </div>
+    </div>
+
+    <div class="menuMobile">
+        <div class="menuMobileConteudo">
+            <a href="#home">Home</a>
+            <a href="#livro">Livro</a>
+            <a href="#pacote">Pacotes</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+
+    <section class="containerBody">
+        <div class="videos">
+            <video id="videoPlayer" src="images/vid-1.mp4" autoplay muted loop></video>
+        </div>
+        <div class="conteudoBody">
+            <h1>A aventura vale a pena</h1>
+            <p>Descubra novos lugares conosco, a aventura aguarda</p>
+
+            <button>Descubra Agora</button>
+
+            <div class="buttonsBody">
+                <span class="bola select"></span>
+                <span class="bola"></span>
+                <span class="bola"></span>
+                <span class="bola"></span>
+                <span class="bola"></span>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="livro"></div>
+
+    <section class="bookNow">
+        <div class="title">
+            <span class="letra">R</span>
+            <span class="letra">e</span>
+            <span class="letra">s</span>
+            <span class="letra">e</span>
+            <span class="letra">r</span>
+            <span class="letra">v</span>
+            <span class="letra">e</span>
+            <span>&nbsp;</span>
+            <span class="letra">A</span>
+            <span class="letra">g</span>
+            <span class="letra">o</span>
+            <span class="letra">r</span>
+            <span class="letra">a</span>
+        </div>
+
+
+        <div class="bookNowconteudo">
+
+            <div class="img">
+                <img src="./images/book-img.svg">
+            </div>
+
+            <form class="inputsBook">
+                <label for="text">Seu Nome</label>
+                <input type="text" id="text" placeholder="Digite seu nome" required>
+                <label for="email" id="label">Seu Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" required>
+                <label for="number" id="label">Quantos livros?</label>
+                <input type="number" id="number" placeholder="so numeros" required>
+
+                <button>Reserve Agora</button>
+            </form>
+
+        </div>
+    </section>
+
+    <div id="pacote"></div>
+
+    <section class="pacotes">
+        <div class="title">
+            <span class="letra">P</span>
+            <span class="letra">A</span>
+            <span class="letra">C</span>
+            <span class="letra">O</span>
+            <span class="letra">T</span>
+            <span class="letra">E</span>
+            <span class="letra">S</span>
+        </div>
+
+        <div class="pacotesConteudo">
+
+            <div class="cardPacote">
+                <div class="img">
+                    <img src="./images/p-1.jpg">
+                </div>
+                <div class="conteudoCard">
+                    <span class="loc"><ion-icon name="location"></ion-icon> Turquia</span>
+                    <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <div class="stars">
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="StarVazia" name="star-outline"></ion-icon>
+                    </div>
+                    <span class="price">R$ 420,00</span>
+
+                    <button>Reserve Agora</button>
+                </div>
+            </div>
+
+            <div class="cardPacote">
+                <div class="img">
+                    <img src="./images/p-2.jpg">
+                </div>
+                <div class="conteudoCard">
+                    <span class="loc"><ion-icon name="location"></ion-icon> Havai</span>
+                    <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <div class="stars">
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="StarVazia" name="star-outline"></ion-icon>
+                        <ion-icon class="StarVazia" name="star-outline"></ion-icon>
+                    </div>
+                    <span class="price">R$ 600,00</span>
+
+                    <button>Reserve Agora</button>
+                </div>
+            </div>
+
+            <div class="cardPacote">
+                <div class="img">
+                    <img src="./images/p-3.jpg">
+                </div>
+                <div class="conteudoCard">
+                    <span class="loc"><ion-icon name="location"></ion-icon> Austrália</span>
+                    <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <div class="stars">
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                        <ion-icon class="Starcomplet" name="star"></ion-icon>
+                    </div>
+                    <span class="price">R$ 950,00</span>
+
+                    <button>Reserve Agora</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="galeria"></div>
+
+    <section class="gallery">
+        <div class="title">
+            <span class="letra">G</span>
+            <span class="letra">A</span>
+            <span class="letra">L</span>
+            <span class="letra">E</span>
+            <span class="letra">R</span>
+            <span class="letra">I</span>
+            <span class="letra">A</span>
+        </div>
+
+        <div class="galleryConteudo">
+
+            <div class="galleryCard">
+                <img src="./images/g-1.jpg">
+                <div class="conteudo">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta obcaecati iusto, eos voluptates
+                    </span>
+
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="galleryCard">
+                <img src="./images/g-2.jpg">
+                <div class="conteudo">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta obcaecati iusto, eos voluptates
+                    </span>
+
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="galleryCard">
+                <img src="./images/g-3.jpg">
+                <div class="conteudo">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta obcaecati iusto, eos voluptates
+                    </span>
+
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="galleryCard">
+                <img src="./images/g-4.jpg">
+                <div class="conteudo">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta obcaecati iusto, eos voluptates
+                    </span>
+
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="galleryCard">
+                <img src="./images/g-5.jpg">
+                <div class="conteudo">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta obcaecati iusto, eos voluptates
+                    </span>
+
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="contato"></div>
+
+    <section class="contato">
+        <div class="title">
+            <span class="letra">C</span>
+            <span class="letra">O</span>
+            <span class="letra">N</span>
+            <span class="letra">T</span>
+            <span class="letra">A</span>
+            <span class="letra">T</span>
+            <span class="letra">O</span>
+        </div>
+
+
+        <div class="contatoConteudo">
+
+            <div class="img">
+                <img src="./images/contact-img.svg">
+            </div>
+
+            <form class="inputsContato">
+                <input type="email" placeholder="Digite seu email" required>
+                <textarea cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+
+                <button>Enviar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
